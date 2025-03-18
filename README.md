@@ -69,17 +69,17 @@ var1
 
 https://github.com/user-attachments/assets/d4d3e112-fa80-4bf5-94b7-fde2be5cb910
 
+var2
 
 
 
+https://github.com/user-attachments/assets/84f847c0-1352-45fe-8928-4e91a81b9f02
+
+you can see the difference between the codes in option 1 and 2 - I wanted to prohibit the user from simply putting "enter" in response to the request. unfortunately, it didn't work out.
+
+## 5. Conditional operator "If... else..."
 
 
 
-
-
-
-
-
-## 3. 
 
 
