@@ -182,6 +182,48 @@ function draw() {
 }
 ```
 
+let's make the circle move to the right. to do this, we will make the horizontal coordinate (x) variable x = x +1;
+
+I tried to enter the "if/else" condition, but for some reason it didn't work here.
+
+```
+let x = 0;
+  function setup() {
+  createCanvas(300, 300);
+}
+
+function draw() {
+  background(250, 100, 50);
+  circle(x, 20, 20);
+    x = x +1;
+}
+```
+
+Result
+
+
+
+https://github.com/user-attachments/assets/89d3ac39-0b82-492d-8808-5761a2ed9d94
+
+now let's try to make the circle go back when it reaches the edge of the canvas.
+
+
+```
+let x = 0;
+  function setup() {
+  createCanvas(300, 300);
+}
+
+function draw() {
+  background(250, 100, 50);
+  circle(x, 20, 20);
+    if (x >= 0) {
+    x = x +1;
+  }
+  else (x <= 300);
+  x = x -1;
+}
+```
 
 
 
