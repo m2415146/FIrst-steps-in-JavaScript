@@ -260,6 +260,41 @@ the result will be the same
 
 ![Screenshot_57](https://github.com/user-attachments/assets/a3a409b6-9d36-49ed-a477-51739b57a254)
 
+## Cycles
+
+let's make a counter from 1 to 10
+
+```
+for (let i = 0; i <= 10; i = i +1){
+  console.log(i);
+}
+```
+
+Try-in
+
+
+
+https://github.com/user-attachments/assets/fd7ab185-1e94-40ff-8ec8-fdde279ae605
+
+now let's combine the counter with an earlier task: let the user himself lead up to what number the countdown will be.
+
+```
+let number = prompt("Enter the reference number");
+for (let i = number; i >= 0; i = i -1) {
+  console.log(i);
+}
+```
+
+Try-in
+
+
+
+https://github.com/user-attachments/assets/2b396ca2-57b6-41c7-88aa-7cf215b63b8e
+
+
+
+
+
 
 
 
