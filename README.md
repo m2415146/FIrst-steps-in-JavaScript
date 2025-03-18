@@ -225,6 +225,43 @@ function draw() {
 }
 ```
 
+Let's try to draw a cross.
+
+we need to break the cross into simple shapes that make up it - lines - and set them the xy coordinates of the beginning and end of each
+
+```
+function setup (){
+  createCanvas(300,300);
+}
+function draw() {
+  background(200);
+  line(0, 0, 300, 300);
+  line(0, 300, 300, 0);
+}
+```
+![Screenshot_57](https://github.com/user-attachments/assets/b3519826-1268-4a87-9c6f-b8cbc1e85801)
+
+This task can be done differently by drawing 4 straight lines.
+
+```
+function setup (){
+  createCanvas(300,300);
+}
+function draw() {
+  background(200);
+  line(0, 0, 150, 150);
+  line(0, 300, 150, 150);
+  line(300, 0, 150, 150);
+  line(300, 300, 150, 150);
+}
+```
+
+the result will be the same
+
+![Screenshot_57](https://github.com/user-attachments/assets/a3a409b6-9d36-49ed-a477-51739b57a254)
+
+
+
 
 
 
