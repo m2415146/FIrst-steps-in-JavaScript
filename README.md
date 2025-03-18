@@ -26,7 +26,6 @@ ready
 let's try using another command to shorten lines of code.
 
 ready
-ready
 ![Screenshot_203](https://github.com/user-attachments/assets/14282c06-07da-4c96-b05f-37c0255da359)
 
 ## 3. The comparison operator is "are they equal"
@@ -106,6 +105,83 @@ v2
 
 
 https://github.com/user-attachments/assets/7b1561c2-4597-4996-a87a-ab79721e526b
+
+## 6. Draw simple figures
+
+let's try to place a circle on a background of a given size (300*300) and our chosen color in RGB format (we'll set the color by combining numbers in the RGB range - 250, 100, 50). We will take the diameter of the circle as 20. we will set the coordinates according to the coordinate grid in the picture below
+
+![Screenshot_2](https://github.com/user-attachments/assets/34a08ddc-6ead-41ad-9aee-910a6182a667)
+
+Code:
+```
+function setup() {
+  createCanvas(300, 300);
+}
+
+function draw() {
+  background(250, 100, 50);
+  circle(50, 50, 20);
+}
+```
+Ready
+
+![Screenshot_3](https://github.com/user-attachments/assets/21cf1630-5122-4de6-82a1-b1d38053dc1c)
+
+let's try to move the layer command higher than the circle drawing command. we will set as coordinates for the circle of cursor movement, using the commands "mouseX, mouseY"
+```
+function setup() {
+  createCanvas(300, 300);
+  background(250, 100, 50);
+}
+
+function draw() {
+  
+  circle(mouseX, mouseY, 20);
+}
+```
+Result
+
+
+
+https://github.com/user-attachments/assets/ee16e26d-24fd-4334-8a3b-5e2566458324
+
+It turned out that the background was drawn 1 time (see the command above), and the circle is drawn many times, so the circle leaves a trace when moving.
+
+however, we can remove the trace effect from the circle if we move or add the command describing the background to the same group as the command for drawing a circle. It turns out that every time the mouse moves, the program not only draws a circle in a new position, but also draws a new background on top of the old one, so that the circle leaves no traces when moving
+
+```
+function setup() {
+  createCanvas(300, 300);
+  
+}
+
+function draw() {
+   background(250, 100, 50);
+  circle(mouseX, mouseY, 20);
+
+}
+```
+
+
+
+https://github.com/user-attachments/assets/0b9c927e-5a25-43e6-8466-2ae0e05e0098
+
+Interestingly, if we move the team with the background below the team with the circle, but leave it in the same group, we will see only the background and not the circle, because the background is drawn on top of the circle and covers it.
+
+```
+function setup() {
+  createCanvas(300, 300);
+  
+}
+
+function draw() {
+   circle(mouseX, mouseY, 20);
+  background(250, 100, 50);
+  
+
+}
+```
+
 
 
 
