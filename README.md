@@ -184,7 +184,6 @@ function draw() {
 
 let's make the circle move to the right. to do this, we will make the horizontal coordinate (x) variable x = x +1;
 
-I tried to enter the "if/else" condition, but for some reason it didn't work here.
 
 ```
 let x = 0;
@@ -207,6 +206,7 @@ https://github.com/user-attachments/assets/89d3ac39-0b82-492d-8808-5761a2ed9d94
 
 now let's try to make the circle go back when it reaches the edge of the canvas.
 
+I tried to enter the "if/else" condition, but for some reason it didn't work here.
 
 ```
 let x = 0;
