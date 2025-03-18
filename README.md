@@ -79,6 +79,42 @@ you can see the difference between the codes in option 1 and 2 - I wanted to pro
 
 ## 5. Conditional operator "If... else..."
 
+Let's set a difficult condition: the user must enter a name if his age is greater than or equal to 18 and he has a job - welcome, in other options ("else") - we ask what he is doing here
+
+code:
+```
+let name = prompt("Enter your name");
+let birthYear = prompt("Enter your birth year");
+let job = prompt("Do you have a job? Write Yes or No")
+let age = 2025 - birthYear;
+  if (age >= 18 && job == "Yes") {
+    alert("Wellcome!");
+  }
+  else {
+    let message = prompt("What do you do here?");
+  }
+```
+
+Try-in
+
+v1
+
+
+
+https://github.com/user-attachments/assets/94dd2abb-6ca0-4aad-9168-7388f5b0c720
+
+v2
+
+
+
+https://github.com/user-attachments/assets/9a0ae5de-d202-4144-87cc-0976efa8d085
+
+
+
+
+
+  
+
 
 
 
