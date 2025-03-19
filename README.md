@@ -291,6 +291,78 @@ Try-in
 
 https://github.com/user-attachments/assets/2b396ca2-57b6-41c7-88aa-7cf215b63b8e
 
+Let's try to create a cross out of squares.
+
+```
+function setup () {
+  createCanvas(400, 400);
+  for (let i = 0; i <= 400; i = i + 40) {
+  square (i,i,20);
+  }
+  for (let i = 0; i < 400; i = i + 40) {
+  square (400 - i, i, 20);
+  }
+}
+```
+
+Try-in
+
+![Screenshot_58](https://github.com/user-attachments/assets/ac9185a3-bd5d-4918-a35e-587d5ccf5ac6)
+
+let's try to fill the entire canvas with color squares.
+
+```
+function setup () {
+  createCanvas(400, 400);
+  for (let i = 0; i < 400; i = i + 40) {
+    for (let j = 0; j < 400; j = j + 40) {
+  square (i,j,20);
+      fill (200, 200, 50);
+    }
+}
+}
+```
+![Screenshot_60](https://github.com/user-attachments/assets/922307b8-b9fa-4927-b285-28053094b7f3)
+
+but here comes the problem - the top-left square is not filled in for some reason.
+
+fill the canvas with colored squares of different sizes
+
+```
+function setup () {
+  createCanvas(400, 400);
+  for (let i = 0; i < 400; i = i + 40) {
+    for (let j = 0; j < 400; j = j + 40) {
+  square (i,j,(i + j)/30);
+      fill (200, 200, (i + j)/3 );
+    }
+}
+}
+```
+
+![Screenshot_61](https://github.com/user-attachments/assets/5d94fdb5-be86-4761-9391-48d2cf9998b4)
+
+let's try to distribute the squares in a wave
+
+```
+function setup () {
+  createCanvas(400, 400);
+  for (let i = 0; i < 400; i = i + 40) {
+    for (let j = 0; j < 400; j = j + 40) {
+  square (i,sin(j)*100,(i + j)/30);
+      fill (200, 200, (i + j)/3 );
+    }
+}
+}
+```
+
+Something strange happened.
+
+![Screenshot_62](https://github.com/user-attachments/assets/c87131b2-dbf9-49a6-a6e8-41d80dd5a372)
+
+
+
+
 
 
 
